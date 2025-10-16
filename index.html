@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Exemplo — Página Inicial</title>
+  <meta name="description" content="Plataforma para ONGs — missão, visão e contato." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Página inicial da ONG">
+        <svg class="logo" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M7 13c1.5-2 4-3 5-3s3.5 1 5 3" stroke="#fff" stroke-width="1.2" fill="none"/>
+        </svg>
+        <span>ONG Exemplo</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <article class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Transformando vidas com ação e transparência</h1>
+      <p class="lead">Nossa missão é conectar pessoas e recursos a projetos sociais de impacto.</p>
+      <section aria-labelledby="mission">
+        <h2 id="mission">Missão, Visão e Valores</h2>
+        <p><strong>Missão:</strong> Promover inclusão social e desenvolvimento comunitário.</p>
+        <p><strong>Visão:</strong> Ser referência em projetos sustentáveis e participativos.</p>
+        <p><strong>Valores:</strong> Transparência, respeito e colaboração.</p>
+      </section>
+    </article>
+
+    <section aria-labelledby="highlight-projects" class="projects-preview">
+      <h2 id="highlight-projects">Projetos em Destaque</h2>
+      <ul class="cards" aria-label="Lista de projetos em destaque">
+        <li class="card">
+          <figure>
+            <img src="images/projeto-educacao.svg" alt="Crianças em sala de aula" />
+            <figcaption><strong>Educação para Todos</strong> — Curso de reforço escolar.</figcaption>
+          </figure>
+        </li>
+        <li class="card">
+          <figure>
+            <img src="images/projeto-saude.svg" alt="Ação de saúde comunitária" />
+            <figcaption><strong>Saúde Comunitária</strong> — Campanhas de vacinação e prevenção.</figcaption>
+          </figure>
+        </li>
+      </ul>
+      <p><a class="btn" href="projetos.html">Ver todos os projetos</a></p>
+    </section>
+
+    <section aria-labelledby="transparency" class="transparency">
+      <h2 id="transparency">Relatórios de Transparência</h2>
+      <p>Publicamos relatórios periódicos sobre a aplicação dos recursos. Acesse o GitHub do projeto para consultar os arquivos.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <address>
+        <strong>ONG Exemplo</strong><br />
+        Rua Fictícia, 123 — Cidade — Estado<br />
+        <a href="mailto:contato@ongexemplo.org">contato@ongexemplo.org</a><br />
+        Telefone: (61) 99999-9999
+      </address>
+      <nav aria-label="Redes sociais">
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/masks.js" defer></script>
+</body>
+</html>

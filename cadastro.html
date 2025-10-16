@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro de Voluntário — ONG Exemplo</title>
+  <meta name="description" content="Formulário de cadastro para voluntários e doadores." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">ONG Exemplo</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Cadastro</h1>
+    <p class="lead">Preencha o formulário para se candidatar a vagas de voluntariado ou apoiar como doador.</p>
+
+    <form id="cadastroForm" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="nome">Nome completo *</label>
+        <input id="nome" name="nome" type="text" required minlength="2" />
+
+        <label for="email">E‑mail *</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="cpf">CPF *</label>
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required />
+
+        <label for="telefone">Telefone *</label>
+        <input id="telefone" name="telefone" type="tel" inputmode="tel" required placeholder="(00) 0 0000-0000" />
+
+        <label for="nascimento">Data de nascimento *</label>
+        <input id="nascimento" name="nascimento" type="date" required max="2007-12-31" />
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="cep">CEP *</label>
+        <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" placeholder="00000-000" required />
+
+        <label for="endereco">Endereço *</label>
+        <input id="endereco" name="endereco" type="text" required />
+
+        <label for="cidade">Cidade *</label>
+        <input id="cidade" name="cidade" type="text" required />
+
+        <label for="estado">Estado *</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione...</option>
+          <option value="DF">DF</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+        </select>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências</legend>
+        <label for="areas">Áreas de interesse</label>
+        <select id="areas" name="areas" multiple size="4" aria-describedby="areas-help">
+          <option value="educacao">Educação</option>
+          <option value="saude">Saúde</option>
+          <option value="alimentacao">Alimentação</option>
+          <option value="meioambiente">Meio ambiente</option>
+        </select>
+        <p id="areas-help" class="help">Pressione Ctrl (ou ⌘) para selecionar múltiplas opções.</p>
+      </fieldset>
+
+      <p class="form-actions">
+        <button type="submit" class="btn">Enviar cadastro</button>
+        <button type="reset" class="btn secondary">Limpar</button>
+      </p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 ONG Exemplo</p>
+    </div>
+  </footer>
+
+  <script src="js/masks.js" defer></script>
+</body>
+</html>
