@@ -15,11 +15,4 @@ O site foi desenvolvido utilizando apenas HTML5, CSS3 e JavaScript puro.
 A estrutura segue boas práticas semânticas, com formulários acessíveis e tags apropriadas.  
 O layout é simples, leve e pensado para dispositivos móveis.
 
-## Entrega
-1. Compactar a pasta do projeto em `.zip` **ou**  
-2. Enviar o link público do repositório no GitHub.  
-3. (Opcional) Ativar o GitHub Pages para visualizar o site online.
-
----
-
 © 2025 William Matias de Oliveira
